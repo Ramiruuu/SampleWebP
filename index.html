@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramiruu Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <h1 id="loading-text"></h1>
+        <div class="loading-bar"></div>
+    </div>
+
+    <!-- Selection Screen -->
+    <div id="selection-screen" class="hidden">
+        <h2>Are you a VISITOR or TEACHER?</h2>
+        <button onclick="enterPortfolio()">Enter Portfolio</button>
+    </div>
+
+    <!-- Main Portfolio (Hidden Initially) -->
+    <div id="portfolio" class="hidden">
+        <!-- Sidebar Navbar (Initially Hidden) -->
+        <div class="sidebar">
+            <button id="toggleSidebar">☰</button>
+            <nav id="navMenu" class="hidden">
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact Me</a>
+            </nav>
+        </div>
+
+        <main>
+            <!-- About Me Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hello, I'm [Your Name], a passionate developer specializing in ...</p>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-list">
+                    <div class="project" onclick="viewProject('project1')">
+                        <h3>Project 1</h3>
+                        <p>Click to view details</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <div class="cert-carousel">
+                    <img src="assets/cert1.jpg" alt="Certification 1">
+                </div>
+            </section>
+
+            <!-- Contact Me Section -->
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Reach out via:</p>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Discord</a>
+                <a href="#">Telegram</a>
+                <a href="#">LinkedIn</a>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
